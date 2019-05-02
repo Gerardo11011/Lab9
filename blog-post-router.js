@@ -119,14 +119,14 @@ router.put('/blog-posts/:id', (req, res) => {
    List.putPost(postId, update.title, update.content, update.author, update.publishDate)
        .then(post => {
            res.status(200).json({
-               message : "Successfully updated the post.",
+               message : "Updated Post",
                status : 200,
                post : post
            });
        })
        .catch(err => {
            res.status(404).json({
-               message : "Post not found in the list.",
+               message : "Post Not found",
                status : 404
            });
            return next();
