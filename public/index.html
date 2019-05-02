@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title> Post </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./script.css" type="text/css">
+    </head>
+   <body>
+    <font color="#FFFFFF">
+      <h1>Posts</h1>
+        <table style="width:100%">
+          <tr>
+            <td>
+              <h2>Get post by author</h2>
+              <div class="content">
+                <form id="authorForm">
+                  <p>Author name: <input type="text" id="nameAuthor"/></p>
+                </form>
+                <button id="getP">Get</button>
+              </div>
+            </td>
+
+            <td>
+              <h2>New Post</h2>
+              <div class="content">
+                <form id="newForm">
+                  <p>Title: <input type="text" id="titleNew"/></p>
+                  <p>Author: <input type="text" id="authorNew"/></p>
+                  <p>Body: </p> <textarea rows="10" cols="50" id="bodyNew"></textarea>
+                  <p>Date: <input type="text" id="dateNew"/></p>
+                </form>
+                <button id="createP">Create</button>
+              </div>
+            </td>
+
+
+            <td>
+              <h2>Post Edit</h2>
+              <div class="content">
+                <form id="putForm">
+                    <p>Post id: <input type="text" id="postId"/></p>
+                    <p>Title: <input type="text" id="newTitle"/></p>
+                    <p>Author: <input type="text" id="newAuthor"/></p>
+                    <p>Body: </p> <textarea rows="5" cols="35" id="newContent"></textarea>
+                    <p>Publish Date: <input type="text" id="newDate"/></p>
+                </form>
+                <button id="updatePost">Update post</button>
+              </div>
+            </td>
+
+            <td>
+              <h2>Delete by ID  </h2>
+              <div class="content">
+                <form id="deleteForm">
+                  <p>Post id: <input type="text" id="deleteId"/></p>
+                </form>
+                <button id="deletePost">Delete</button>
+              </div>
+            </td>
+
+            </tr>
+          </table>
+        <div class="list">
+          <ul id="posts"></ul>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="./jquery.js"></script>
+     </body>
+</html>

@@ -1,0 +1,12 @@
+body{
+  background-color: rgb(16, 96, 130);
+}
+table, th, td {
+  border: 1px solid black;
+}
+h1{
+  text-align: center;
+}
+h2{
+  vertical-align: top;
+}
